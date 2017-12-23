@@ -1,0 +1,31 @@
+div {
+/*	border: 2px solid pink;
+*/ 	padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+label {
+	color: blue;
+}
+
+img {
+	height: 20px;
+	width: 40px;
+}	
+
+.panel-heading {
+	border: 2px solid pink;
+	color: white;
+    background-color: pink;
+    border-color: deeppink;
+    font-size: 20px;
+    text-align: center;
+}
+
+.jumbotron {
+padding-top: 1px;
+    padding-bottom: 1px;
+	color: pink;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Train Schedule Application
+	</title>
+
+	<!-- Linking CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Linking Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+ 	<!--      <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> -->
+	
+	<!-- Moment -->
+    <script src="http://momentjs.com/downloads/moment.js"></script>  
+</head>
+<body>
+		<!-- Jumbotron Header -->
+	<div style="text-align: center; padding-top: 1px;
+	    padding-bottom: 1px" class="jumbotron">
+	  <h1>Train Schedule</h1>
+	  <p>Travel. Explore. Seek.</p>
+	</div>
+		<!-- Current Train Schedule Table -->
+		<div class="panel panel-default">
+		  <div 	style="color: white;
+	    background-color: pink;" class="panel-heading">Current Train Schedule</div>
+			<!-- Table -->
+			 <div class="table-responsive">          
+			  <table class="table">
+			    <thead>
+			      <tr>
+			        <th>Train Name</th>
+			        <th>Destination</th>
+			        <th>Frequency (min)</th>
+			        <th>Next Arrival</th>
+			        <th>Minutes Away</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>CompassionE Express</td>
+			        <td>Pluto</td>
+			        <td>60</td>
+			        <td>life</td>
+			        <td>that</td>
+			      </tr>
+  			      <tr>
+			        <td>Human Connection Line</td>
+			        <td>Deer Park</td>
+			        <td>15</td>
+			        <td>life</td>
+			        <td>that</td>
+			      </tr>
+			      <tr>
+			        <td>Little Prince</td>
+			        <td>B612</td>
+			        <td>30</td>
+			        <td>life</td>
+			        <td>that</td>
+			      </tr>
+			    </tbody>
+			  </table>
+			  </div>
+
+		<!-- Add Train Table -->
+		<div class="panel panel-default">
+		  <div style="color: white;
+	    background-color: pink;"class="panel-heading">Add Train</div>
+		  	<label>Train Name</label>
+		  	<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="basic-addon1"><img src="http://www.free-icons-download.net/images/train-icon-65943.png"></span>
+			  <input  id="train-name" type="text" class="form-control" placeholder="Enter Train Name" aria-describedby="basic-addon1">
+			</div>
+		  	<label >Destination</label>
+		  	<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="basic-addon1"><img src="https://cdn0.iconfinder.com/data/icons/travel-and-transportation-flat-colorful-svg-icons/136/Travel_Transportation_holiday_vacation_fun-11-512.png"></span>
+			  <input id="destinationval" type="text" class="form-control" placeholder="Enter Destination" aria-describedby="basic-addon1">
+			</div>
+		  	<label >First Train Time HH:mm - military time</label>
+		  	<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="basic-addon1"><img src="https://cdn2.iconfinder.com/data/icons/travel-set-2/512/12-512.png"></span>
+			  <input id="first-train" type="text" class="form-control" placeholder="Enter First Train Time" aria-describedby="basic-addon1">
+			</div>
+		  	<label >Frequency (min)</label>
+		  	<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="basic-addon1"><img src="https://lh3.ggpht.com/4A5j-qhtCacARv9BoQAzO15YwfBa6qU5VoXtStPUXJ0slO_57dzi_cr1S9VAyalUgs0=w300"></span>
+			  <input id="frequency-display" type="text" class="form-control" placeholder="Enter Frequency" aria-describedby="basic-addon1">
+			</div>
+			<BR>
+			<button id="add-user" type="submit"><strong>SUBMIT</strong></button>
+			<br>
+			<br>
+		</div>
+	</div>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="javascript/app.js"></script>
+
+
+</body>
+</html>
